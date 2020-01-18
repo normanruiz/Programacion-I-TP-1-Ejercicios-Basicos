@@ -1,0 +1,191 @@
+% Declaracion del tipo de documento y parametros basicos de la hoja
+\documentclass[12pt,a4paper,twoside]{article}
+
+% Package: inputenc - Este paquete permite al usuario especificar una codificación de entrada
+\usepackage[utf8]{inputenc}
+
+% Package: Babel - Este paquete administra reglas tipográficas (y otras) determinadas culturalmente para una amplia gama de idiomas.
+%\usepackage[spanish]{babel}
+
+%
+\usepackage[T1]{fontenc}
+
+% Packages: amsmath - Se adapta para su uso en LaTeX la mayoría de las características matemáticas que se encuentran en AMS-TeX; Es altamente recomendado como complemento de la composición matemática seria en LaTeX.
+\usepackage{amsmath}
+
+%Package: enumerate - Este paquete le da al entorno de enumeración un argumento opcional lo que determina el estilo en el que se imprime el contador.
+\usepackage{enumerate}
+
+%Package: tabto - Se definen dos nuevos comandos de posicionamiento de texto: \tab y \tabto
+\usepackage{tabto}
+
+%
+\usepackage{amsfonts}
+
+%
+\usepackage{amssymb}
+
+% Este paquete permite la insercion de imagenes en el documento, con esta linea habilito la insercion de archivos .eps
+\usepackage[dvips]{graphicx}
+
+% 
+\usepackage{lettrine}
+
+%
+\usepackage{lmodern}
+
+% Establece los margenes de la hoja
+\usepackage[left=2cm,right=2cm,top=3cm,bottom=3cm]{geometry}
+
+% 
+\usepackage{pstricks,pst-node}
+
+%
+\usepackage{textcomp}
+
+% Con esta linea se declara el autor del documento
+\author{Norman Ruiz}
+
+% Con esta linea se declara el titulo del documento
+\title{TRABAJO PRACTICO \linebreak Nº 1 \linebreak (EJERCICIOS BASICOS)}
+
+%
+\usepackage[light]{draftcopy}
+%
+\draftcopyName{Norman Ruiz}{130}
+%
+\draftcopyFirstPage{2}
+
+\usepackage{fancyhdr}
+\lfoot[\today]{\today}
+\cfoot[\thepage]{\thepage}
+\rfoot[Norman Ruiz]{Norman Ruiz}
+\renewcommand{\footrulewidth}{.5pt}
+\lhead[]{}
+\chead[]{}
+\rhead[]{Trabajo Practico Nº 1 (Ejercicios Basicos)}
+\renewcommand{\headrulewidth}{.5pt}
+\pagestyle{fancy}
+
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Ejercicio \textnumero 1}
+
+\hspace*{1cm}Hacer un programa que permita ingresar dos números por teclado y que luego calcule y emita la suma de ambos y la resta del segundo menos el primero. Se deben mostrar ambos resultados por pantalla.
+
+\newpage
+\section{Ejercicio \textnumero 2}
+
+\hspace*{1cm}Hacer un programa que permita ingresar por teclado la cantidad de horas trabajadas en el mes por un operario y luego el valor que se le paga por hora trabajada a ese operario. El programa debe calcular y emitir por pantalla el sueldo que le corresponda.
+
+\newpage
+\section{Ejercicio \textnumero 3}
+
+\hspace*{1cm}Una concesionaria de autos paga a los vendedores un sueldo fijo de \$ 5000.-, más \$ 500.- de premio por cada auto vendido. Hacer un programa que permita ingresar por teclado la cantidad de autos vendidos por un determinado vendedor y que luego calcule el sueldo total a pagarle al mismo (Sueldo fijo + Comisión Total) y emitirlo por pantalla.
+Atención: El programa solamente debe solicitar un solo dato: la cantidad de autos vendidos.
+
+\newpage
+\section{Ejercicio \textnumero 4}
+
+\hspace*{1cm}Una farmacia hace el 15\% de descuento sobre los precios de la lista oficial. Hacer un programa que permita ingresar por teclado el precio de lista de un determinado artículo y la cantidad de unidades compradas por un determinado cliente. Luego calcular e informar por pantalla el total a pagar aplicando el descuento respectivo. 
+Por ejemplo: Precio del artículo: \$50.-. Cantidad de Unidades: 2. Total a Pagar: \$ 85.
+
+\newpage
+\section{Ejercicio \textnumero 5}
+
+\hspace*{1cm}Existe una unidad de medida llamada pulgada que se usa por ejemplo para medir el tamaño de la pantalla de un monitor. Una pulgada equivale aproximadamente a 2,5 cm.
+\begin{list}{•}{}
+\item Hacer un programa para ingresar por teclado una medida en cms y que calcule y emita por pantalla el equivalente en pulgadas.
+\linebreak Atención: El programa solamente debe solicitar un solo dato: la cantidad de cms a convertir.
+\item Hacer un programa para ingresar por teclado una medida en pulgadas y que calcule y emita por pantalla el equivalente en cms.
+\linebreak Atención: El programa solamente debe solicitar un solo dato: la cantidad de pulgadas a
+convertir.
+\end{list}
+
+\newpage
+\section{Ejercicio \textnumero 6}
+
+\hspace*{1cm}Hacer un programa para ingresar por teclado la cantidad de asientos disponibles en un avión y la cantidad de pasajes vendidos (es decir la cantidad de asientos ocupados) y luego calcular e informar el porcentaje de ocupación del mismo.
+Por ejemplo si el avión tiene 200 asientos disponibles y se vendieron 80 pasajes, el porcentaje
+de ocupación que se informará será de un 40\%.
+
+\newpage
+\section{Ejercicio \textnumero 7}
+
+\hspace*{1cm}Una maestra desea un programa para ingresar por teclado la cantidad de alumnos hombres y alumnas mujeres de un curso y obtener el porcentaje respectivo para cada sexo.
+Por ejemplo, si se ingresa 24 alumnos y 16 alumnas, obtendrá como respuesta que en ese
+curso el 60\% son alumnos y el 40\% son alumnas.
+
+\newpage
+\section{Ejercicio \textnumero 8}
+
+\hspace*{1cm}Un comercio vende tres marcas de alfajores distintas: Sabroso, Goloso y Apetitoso. El dueño le pide a Ud., futuro programador, un programa para que se pueda ingresar por teclado la cantidad de alfajores vendidos durante el día para cada una de las tres marcas en el orden anteriormente indicado (es decir se ingresan 3 datos distintos) y luego se calcule e informe el porcentaje de ventas para cada una de ellas.
+Por ejemplo: se ingresa 100, 25 y 75 como cantidades vendidas entonces el programa
+calculará e informará Sabroso: 50\%, Goloso 12,50\% y Apetitoso 37,50\%.
+
+\newpage
+\section{Ejercicio \textnumero 9}
+
+\hspace*{1cm}Hacer un programa para que se ingrese por teclado el importe de una venta sin el IVA incluido (se lo llama Importe Neto), luego calcular y mostrar por pantalla el importe total con el IVA del 21\% incluido (se lo llama Importe Bruto). Por ejemplo: se ingresa 80 como Importe Neto, se calculará y mostrará entonces 96,80 como Importe Bruto.
+
+\newpage
+\section{Ejercicio \textnumero 10}
+
+\hspace*{1cm}Hacer un programa para que se ingrese por teclado el importe de una venta con el IVA incluido (se lo llama Importe Bruto), luego calcular y mostrar por pantalla el importe total sin el IVA del 21\% incluido (se lo llama Importe Neto).
+Por ejemplo: se ingresa 169,40 como Importe Bruto, se calculará y mostrará entonces 140
+como Importe Neto.
+
+\newpage
+\section{Ejercicio \textnumero 11}
+
+\hspace*{1cm}Hacer un programa para que se ingrese por teclado el importe bruto de una venta y el importe neto de una venta. El importe bruto es el importe original y el importe neto es el importe que el cliente pagó luego de que el vendedor le aplicara algún descuento. El programa debe luego mostrar por pantalla que porcentaje de descuento fue aplicado a la venta. Por ejemplo si se ingresa importe bruto 120 e importe neto 108, se emitirá un cartel indicando que el descuento aplicado fue del 10\%. Tener en cuenta que el importe neto es siempre menor o igual al importe bruto, nunca mayor.
+
+\newpage
+\section{Ejercicio \textnumero 12}
+
+\hspace*{1cm}Un negocio de venta de alfajores le pide a Ud., futuro programador, que le desarrolle un programa teniendo en cuenta las siguientes condiciones:
+La caja de 12 alfajores se vende a \$50.- y cada alfajor suelto a \$ 5. El programa debe solicitar al usuario cuantos alfajores compró un cliente y luego calcular el importe a pagar por el mismo.
+Tener en cuenta que por cada 12 alfajores se debe calcular una caja, y el excedente se calcula como suelto.
+Por ejemplo: Si la cantidad ingresada son 15 alfajores, el programa calculará: 1 caja y 3
+sueltos, es decir \$50.- + \$5 x 3 = \$ 65.
+Si cantidad ingresada son 28 alfajores, el programa calculará: 2 cajas y 4 sueltos, es decir \$100.- + \$5 x 4 = \$ 120.-.
+Si cantidad ingresada son 8 alfajores, el programa calculará: 0 cajas y 8 sueltos, es decir \$5 x 8 = \$ 40.-.
+
+\newpage
+\section{Ejercicio \textnumero 13}
+
+\hspace*{1cm}Hacer un programa que solicite por teclado que se ingresen dos números y luego
+guardarlos en dos variables distintas. A continuación se deben intercambiar mutuamente los
+valores en ambas variables y mostrarlos por pantalla.
+Por ejemplo: Suponiendo que se ingresan 3 y 8 como valores y que la variables usadas son A
+y B, entonces A=3 y B=8, pero luego debe quedar A=8 y B=3.
+Nota 1: No se deben efectuar operaciones aritméticas (suma, resta, etc.) de ningún tipo.
+Nota 2: Los valores 3 y 8 y los nombres A y B son solamente para ejemplificar, no debe hacer
+un programa para ingresar solamente esos valores, debe ser genérico.
+
+\newpage
+\section{Ejercicio \textnumero 14}
+
+\hspace*{1cm}Hacer un programa para que el usuario ingrese la hora, minutos y segundos de un
+momento del día y se emita por pantalla la cantidad de segundos transcurridos desde la
+medianoche. (hora 00:00:00).
+
+\newpage
+\section{Ejercicio \textnumero 15}
+
+\hspace*{1cm}Hacer un programa para convertir grados Celsius a grados Fahrenheit. Para efectuar el
+cálculo tener en cuenta que 0 grados Celsius equivalen a 32 grados Fahrenheit, y que cada
+grado Celsius equivale a 1,8 grados Fahrenheit. Por ejemplo 10 grados Celsius, equivalen a 32
++ 1,8 * 10 = 50 grados Fahrenheit. Arme usted mismo la fórmula a partir del cálculo del
+ejemplo anterior.
+
+\newpage
+
+\end{document}
